@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+     <head>
+       <title> TEMPERATURE CONVERTING APP</title>
+	  
+	  <link rel ="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	  
+
+	  <script type='text/javascript' src="c:\\users\\hp\\desktop\\TEMP.js">
+	   </script>
+	   <script src ="scripts/jquery-3.6.0.min.js">
+	   </script>
+	   <script src ="scripts/jquery.mobile-1.4.5.min.js">
+	   </script>
+	  
+	  <meta  name="viewport" content="width= device-width,intial-scale=1.0">
+	   </head>
+	  
+	  
+	  
+	  <BODY>
+	  <DIV DATA-ROLE="PAGE">   <!-- KEEPS ALL CONTENT ON ONE pAGE ON MOBILE SCREEN -->
+	       <DIV DATA-ROLE="FIELDCONTAIN">
+	                  <INPUT TYPE="NUMBER" ID ="temp" NAME="TEMP">   <!-- NUMBER BOX TO ENTER TEMPERATURE VALUE    -->
+	                   <LABEL ID ="unit">&deg; C</LABEL>  <!--   SETTING DEFAULT -->
+	        </DIV>
+			
+		<FIELDSET DATA-ROLE = "CONTROLS">
+             <LEGEND> CONVERT TO :</LEGEND>
+		        <INPUT TYPE="RADIO" NAME="UNITS" ID="far" VALUE="FARENHEIT">
+				<LABEL FOR="FAR" > FARENHEIT</LABEL>
+				 <INPUT TYPE="RADIO" NAME="UNITS" ID="cel" VALUE="CELSIUS" checked >
+				<LABEL FOR="CEL" > CELSIUS</LABEL>
+		</FIELDSET>
+		
+		
+		<INPUT TYPE="BUTTON" VALUE ="CONVERT" onclick="convert();">
+		<P ID ="ca" ></P>
+		
+			
+				<div id="dd">
+				</div>
+		</DIV>
+				
+				
+			
+	  
+	  </BODY>
+	  </HTML>
